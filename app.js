@@ -6,6 +6,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.send("the home page");
 });
-app.listen(5000, () => {
+
+app.listen(process.env.PORT, () => {
   console.log("server started");
 });
